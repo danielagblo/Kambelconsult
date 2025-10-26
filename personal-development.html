@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Development Consultancy - Kambel Consult</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="static/css/klogo.jpeg" alt="Kambel Consult" class="site-logo me-2">Kambel Consult
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Publications</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="course-books.html">Course Books</a></li>
+                            <li><a class="dropdown-item" href="guidance-books.html">Guidance Books</a></li>
+                            <li><a class="dropdown-item" href="inspirational-books.html">Inspirational Books</a></li>
+                            <li><a class="dropdown-item" href="literature.html">Literature</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Consultancy</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="education.html">Education</a></li>
+                            <li><a class="dropdown-item" href="career.html">Career</a></li>
+                            <li><a class="dropdown-item active" href="personal-development.html">Personal Development</a></li>
+                            <li><a class="dropdown-item" href="business.html">Business</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#masterclass">Masterclass</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#kict">KICT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section py-5" style="margin-top: 80px; background: var(--gradient-primary); position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html#consultancy" class="text-white-50 text-decoration-none">Consultancy</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Personal Development</li>
+                        </ol>
+                    </nav>
+                    <h1 class="display-5 fw-bold mb-3 gradient-text">Personal Development</h1>
+                    <p class="lead mb-0">Mindset, habits, and performance coaching to unlock your potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold">Programs</h2>
+                    <p class="text-muted">Structured paths to build lasting personal growth.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-seedling fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-semibold">Habit Systems</h5>
+                        <p class="text-muted mb-0">Design routines for focus, energy, and productivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-semibold">Mindset Coaching</h5>
+                        <p class="text-muted mb-0">Tools to manage stress, resilience, and confidence.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <i class="fas fa-shoe-prints fa-3x text-primary mb-3"></i>
+                        <h5 class="fw-semibold">Accountability</h5>
+                        <p class="text-muted mb-0">Weekly check-ins and actionable progress tracking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container text-center">
+            <div class="small">&copy; <span id="current-year"></span> Kambel Consult. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
+

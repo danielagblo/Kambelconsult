@@ -1,0 +1,27 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<link rel="icon" type="image/jpeg" href="{% static 'css/klogo.jpeg' %}">
+<link rel="shortcut icon" type="image/jpeg" href="{% static 'css/klogo.jpeg' %}">
+{% endblock %}
+
+{% block extrastyle %}
+{{ block.super }}
+<style>
+    #header {
+        background: #007bff;
+    }
+    #branding h1, #branding h1 a:link, #branding h1 a:visited {
+        color: #fff;
+    }
+</style>
+{% endblock %}
+

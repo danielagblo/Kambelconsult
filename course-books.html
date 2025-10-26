@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Books - Kambel Consult</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="static/css/klogo.jpeg" alt="Kambel Consult" class="site-logo me-2">Kambel Consult
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Publications
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="course-books.html">Course Books</a></li>
+                            <li><a class="dropdown-item" href="guidance-books.html">Guidance Books</a></li>
+                            <li><a class="dropdown-item" href="inspirational-books.html">Inspirational Books</a></li>
+                            <li><a class="dropdown-item" href="literature.html">Literature</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Consultancy
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html#consultancy">Education</a></li>
+                            <li><a class="dropdown-item" href="index.html#consultancy">Career</a></li>
+                            <li><a class="dropdown-item" href="index.html#consultancy">Personal Development</a></li>
+                            <li><a class="dropdown-item" href="index.html#consultancy">Business</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#masterclass">Masterclass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#kict">KICT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5" style="margin-top: 80px; background: var(--gradient-hero); position: relative; overflow: hidden;">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-lg-8 mx-auto text-center text-white">
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="mb-4">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html" class="text-white-50 text-decoration-none">Home</a></li>
+                            <li class="breadcrumb-item"><a href="index.html#publications" class="text-white-50 text-decoration-none">Publications</a></li>
+                            <li class="breadcrumb-item active text-white" aria-current="page">Course Books</li>
+                        </ol>
+                    </nav>
+                    
+                    <h1 class="display-4 fw-bold mb-4 gradient-text">Course Books</h1>
+                    <p class="lead mb-4">Comprehensive educational materials designed to enhance your learning journey and professional development</p>
+                    
+                    <!-- Feature badges -->
+                    <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                        <span class="badge bg-light text-dark px-3 py-2 rounded-pill">
+                            <i class="fas fa-graduation-cap me-1"></i>Educational Excellence
+                        </span>
+                        <span class="badge bg-light text-dark px-3 py-2 rounded-pill">
+                            <i class="fas fa-chart-line me-1"></i>Professional Development
+                        </span>
+                        <span class="badge bg-light text-dark px-3 py-2 rounded-pill">
+                            <i class="fas fa-book-open me-1"></i>Comprehensive Coverage
+                        </span>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="row text-center mt-5">
+                        <div class="col-md-4">
+                            <div class="h3 fw-bold text-white">50+</div>
+                            <div class="text-white-50">Course Books</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="h3 fw-bold text-white">15+</div>
+                            <div class="text-white-50">Categories</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="h3 fw-bold text-white">1000+</div>
+                            <div class="text-white-50">Students Served</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Decorative elements -->
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
+        <div class="position-absolute top-0 end-0 w-100 h-100" style="background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
+    </section>
+
+    <!-- Course Books Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="h3 text-muted mb-3">Available Course Materials</h2>
+                    <p class="text-muted">Explore our comprehensive collection of course books designed for academic and professional excellence</p>
+                </div>
+            </div>
+            
+            <!-- Advanced Filter and Search -->
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-3">
+                    <div class="search-container position-relative">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0"><i class="fas fa-search text-muted"></i></span>
+                            <input type="text" class="form-control border-start-0" id="search-books" placeholder="Search course books...">
+                        </div>
+                        <div class="search-suggestions position-absolute w-100 bg-white shadow-lg rounded-bottom" id="search-suggestions" style="display: none; z-index: 1000;">
+                            <!-- Search suggestions will appear here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <select class="form-select" id="category-filter">
+                        <option value="">All Categories</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Science">Science</option>
+                        <option value="Business">Business</option>
+                        <option value="Technology">Technology</option>
+                        <option value="Language">Language</option>
+                    </select>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <select class="form-select" id="sort-filter">
+                        <option value="title">Sort by Title</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="pages">Pages: Most to Least</option>
+                        <option value="author">Author A-Z</option>
+                    </select>
+                </div>
+                <div class="col-lg-2 mb-3">
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-primary active" id="grid-view">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" id="list-view">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Results Summary -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="results-summary">
+                            <span class="text-muted" id="results-count">Loading books...</span>
+                        </div>
+                        <div class="view-options">
+                            <button class="btn btn-sm btn-outline-secondary" id="clear-filters" style="display: none;">
+                                <i class="fas fa-times me-1"></i>Clear Filters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Books Grid -->
+            <div class="row g-4" id="course-books">
+                <!-- Course books will be loaded dynamically -->
+            </div>
+            
+            <!-- Loading State -->
+            <div id="loading-state" class="text-center py-5">
+                <div class="loading-animation">
+                    <div class="book-loader">
+                        <div class="book-page"></div>
+                        <div class="book-page"></div>
+                        <div class="book-page"></div>
+                    </div>
+                </div>
+                <p class="text-muted mt-3">Loading course books...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Preview Modal -->
+    <div class="modal fade" id="bookPreviewModal" tabindex="-1" aria-labelledby="bookPreviewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-gradient-primary text-white border-0">
+                    <h5 class="modal-title fw-bold" id="bookPreviewModalLabel">Book Preview</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="row g-0">
+                        <div class="col-md-4 bg-light p-4">
+                            <div class="text-center">
+                                <div class="book-preview-cover mb-3">
+                                    <i class="fas fa-book fa-4x text-primary"></i>
+                                </div>
+                                <h6 id="preview-title" class="fw-bold mb-2"></h6>
+                                <p id="preview-author" class="text-muted mb-3"></p>
+                                <div class="preview-rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="ms-2 text-muted">(4.8/5)</span>
+                                </div>
+                                <div class="preview-price h4 text-primary mb-3"></div>
+                                <button class="btn btn-primary w-100 mb-2" onclick="purchaseFromPreview()">
+                                    <i class="fas fa-shopping-cart me-1"></i>Purchase Now
+                                </button>
+                                <button class="btn btn-outline-primary w-100" onclick="addToWishlistFromPreview()">
+                                    <i class="fas fa-heart me-1"></i>Add to Wishlist
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-md-8 p-4">
+                            <div class="preview-content">
+                                <h6 class="fw-bold mb-3">Table of Contents</h6>
+                                <div class="toc-list">
+                                    <div class="toc-item">
+                                        <span class="toc-number">1.</span>
+                                        <span class="toc-title">Introduction to the Subject</span>
+                                    </div>
+                                    <div class="toc-item">
+                                        <span class="toc-number">2.</span>
+                                        <span class="toc-title">Fundamental Concepts</span>
+                                    </div>
+                                    <div class="toc-item">
+                                        <span class="toc-number">3.</span>
+                                        <span class="toc-title">Advanced Topics</span>
+                                    </div>
+                                    <div class="toc-item">
+                                        <span class="toc-number">4.</span>
+                                        <span class="toc-title">Practical Applications</span>
+                                    </div>
+                                    <div class="toc-item">
+                                        <span class="toc-number">5.</span>
+                                        <span class="toc-title">Case Studies</span>
+                                    </div>
+                                </div>
+                                
+                                <h6 class="fw-bold mb-3 mt-4">Sample Content</h6>
+                                <div class="sample-content">
+                                    <p class="text-muted">This comprehensive course book provides in-depth coverage of the subject matter with practical examples and real-world applications. The content is structured to facilitate learning from basic concepts to advanced topics.</p>
+                                    <p class="text-muted">Each chapter includes exercises, case studies, and review questions to reinforce learning and ensure mastery of the material.</p>
+                                </div>
+                                
+                                <h6 class="fw-bold mb-3 mt-4">Key Features</h6>
+                                <ul class="feature-list">
+                                    <li><i class="fas fa-check text-success me-2"></i>Comprehensive coverage of all topics</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Practical examples and case studies</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Interactive exercises and quizzes</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Digital resources and supplements</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <img src="static/css/klogo.jpeg" alt="Kambel Consult" class="footer-logo me-2">Kambel Consult
+                    </h5>
+                    <p class="text-muted">
+                        Empowering professionals through comprehensive publications, consultancy services, and training programs designed to accelerate career and personal development.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Publications</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="course-books.html" class="text-muted text-decoration-none">Course Books</a></li>
+                        <li><a href="guidance-books.html" class="text-muted text-decoration-none">Guidance Books</a></li>
+                        <li><a href="inspirational-books.html" class="text-muted text-decoration-none">Inspirational Books</a></li>
+                        <li><a href="literature.html" class="text-muted text-decoration-none">Literature</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html#consultancy" class="text-muted text-decoration-none">Education</a></li>
+                        <li><a href="index.html#consultancy" class="text-muted text-decoration-none">Career</a></li>
+                        <li><a href="index.html#consultancy" class="text-muted text-decoration-none">Personal Development</a></li>
+                        <li><a href="index.html#consultancy" class="text-muted text-decoration-none">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy-policy.html" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="text-muted text-decoration-none">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted mb-3">Stay updated with our latest publications and insights.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" id="newsletter-email" placeholder="Enter your email">
+                        <button class="btn btn-primary" type="button" onclick="subscribeNewsletter(document.getElementById('newsletter-email').value)">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="mb-0 text-muted">&copy; <span id="current-year">2024</span> Kambel Consult. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted">Designed with <i class="fas fa-heart text-danger"></i> for professionals</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0 text-muted">
+                        <small>Designed by <a href="https://bricsky.com" target="_blank" class="fw-bold text-primary text-decoration-none">Bricsky Softwares</a></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="static/js/script.js"></script>
+    <script>
+        // Load course books
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCourseBooks();
+            updateCurrentYear();
+        });
+
+        let allBooks = [];
+        
+        function loadCourseBooks() {
+            fetch('/api/publications/course_books')
+                .then(response => response.json())
+                .then(books => {
+                    allBooks = books;
+                    displayBooks(books);
+                    hideLoadingState();
+                })
+                .catch(error => {
+                    console.error('Error loading course books:', error);
+                    hideLoadingState();
+                    document.getElementById('course-books').innerHTML = '<div class="col-12"><div class="alert alert-warning">Unable to load course books. Please try again later.</div></div>';
+                });
+        }
+        
+        function displayBooks(books) {
+            const container = document.getElementById('course-books');
+            if (books.length === 0) {
+                container.innerHTML = '<div class="col-12"><div class="alert alert-info text-center">No course books found matching your criteria.</div></div>';
+                return;
+            }
+            
+            container.innerHTML = books.map((book, index) => `
+                <div class="col-sm-6 col-lg-4 col-xl-3" style="animation-delay: ${index * 0.1}s;">
+                    <div class="card publication-card h-100 border-0 shadow-sm hover-lift">
+                        <div class="card-body text-center p-4">
+                            <div class="mb-3">
+                                ${book.cover_image_url ? `<img src="${book.cover_image_url}" alt="${book.title} cover" class="img-fluid rounded shadow-sm" loading="lazy" decoding="async" width="180" height="270" style="height: 180px; width: auto; object-fit: cover; aspect-ratio: 2 / 3;"/>` : `<i class=\"fas fa-book fa-3x text-primary\"></i>`}
+                            </div>
+                            <h5 class="card-title mb-2">${book.title}</h5>
+                            <p class="card-text text-muted mb-3">By ${book.author}</p>
+                            <p class="card-text desc mb-4">${book.description}</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="badge bg-primary rounded-pill">${book.category}</span>
+                                <span class="text-muted small">${book.pages} pages</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h4 text-primary mb-0 fw-bold">$${book.price}</span>
+                                <button class="btn btn-primary" onclick="purchaseBook(${book.id}, '${book.title}', ${book.price})">
+                                    <i class="fas fa-shopping-cart me-1"></i>Buy Now
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+        
+        function hideLoadingState() {
+            const loadingState = document.getElementById('loading-state');
+            if (loadingState) {
+                loadingState.style.display = 'none';
+            }
+        }
+        
+        function filterBooks() {
+            const searchTerm = document.getElementById('search-books').value.toLowerCase();
+            const categoryFilter = document.getElementById('category-filter').value;
+            const sortFilter = document.getElementById('sort-filter').value;
+            
+            let filteredBooks = allBooks.filter(book => {
+                const matchesSearch = book.title.toLowerCase().includes(searchTerm) || 
+                                    book.author.toLowerCase().includes(searchTerm) ||
+                                    book.description.toLowerCase().includes(searchTerm);
+                const matchesCategory = !categoryFilter || book.category === categoryFilter;
+                return matchesSearch && matchesCategory;
+            });
+            
+            // Sort books
+            filteredBooks.sort((a, b) => {
+                switch(sortFilter) {
+                    case 'title':
+                        return a.title.localeCompare(b.title);
+                    case 'price-low':
+                        return a.price - b.price;
+                    case 'price-high':
+                        return b.price - a.price;
+                    case 'pages':
+                        return b.pages - a.pages;
+                    case 'author':
+                        return a.author.localeCompare(b.author);
+                    default:
+                        return 0;
+                }
+            });
+            
+            displayBooks(filteredBooks);
+            updateResultsCount(filteredBooks.length);
+            updateClearFiltersButton();
+        }
+        
+        function updateResultsCount(count) {
+            const resultsCount = document.getElementById('results-count');
+            if (count === 0) {
+                resultsCount.textContent = 'No books found matching your criteria';
+            } else if (count === allBooks.length) {
+                resultsCount.textContent = `Showing all ${count} course books`;
+            } else {
+                resultsCount.textContent = `Showing ${count} of ${allBooks.length} course books`;
+            }
+        }
+        
+        function updateClearFiltersButton() {
+            const clearFiltersBtn = document.getElementById('clear-filters');
+            const searchInput = document.getElementById('search-books');
+            const categoryFilter = document.getElementById('category-filter');
+            const sortFilter = document.getElementById('sort-filter');
+            
+            const hasFilters = searchInput.value || categoryFilter.value || sortFilter.value !== 'title';
+            clearFiltersBtn.style.display = hasFilters ? 'block' : 'none';
+        }
+        
+        function clearAllFilters() {
+            document.getElementById('search-books').value = '';
+            document.getElementById('category-filter').value = '';
+            document.getElementById('sort-filter').value = 'title';
+            filterBooks();
+        }
+        
+        function toggleView(viewType) {
+            const gridView = document.getElementById('grid-view');
+            const listView = document.getElementById('list-view');
+            const booksContainer = document.getElementById('course-books');
+            
+            if (viewType === 'grid') {
+                gridView.classList.add('active');
+                listView.classList.remove('active');
+                booksContainer.className = 'row g-4';
+            } else {
+                listView.classList.add('active');
+                gridView.classList.remove('active');
+                booksContainer.className = 'row g-3';
+            }
+        }
+        
+        let currentPreviewBook = null;
+
+        function previewBook(bookId) {
+            const book = allBooks.find(b => b.id === bookId);
+            if (book) {
+                currentPreviewBook = book;
+                document.getElementById('preview-title').textContent = book.title;
+                document.getElementById('preview-author').textContent = `By ${book.author}`;
+                document.getElementById('preview-price').textContent = `$${book.price}`;
+
+                // Swap icon with actual cover in preview if available
+                const coverContainer = document.querySelector('.book-preview-cover');
+                if (coverContainer) {
+                    coverContainer.innerHTML = book.cover_image_url
+                        ? `<img src="${book.cover_image_url}" alt="${book.title} cover" class="img-fluid rounded shadow-sm" loading="lazy" decoding="async" width="240" height="360" style="max-height: 240px; width: auto; object-fit: cover; aspect-ratio: 2 / 3;"/>`
+                        : `<i class="fas fa-book fa-4x text-primary"></i>`;
+                }
+                
+                const modal = new bootstrap.Modal(document.getElementById('bookPreviewModal'));
+                modal.show();
+            }
+        }
+
+        function purchaseFromPreview() {
+            if (currentPreviewBook) {
+                purchaseBook(currentPreviewBook.id, currentPreviewBook.title, currentPreviewBook.price);
+                bootstrap.Modal.getInstance(document.getElementById('bookPreviewModal')).hide();
+            }
+        }
+
+        function addToWishlistFromPreview() {
+            if (currentPreviewBook) {
+                addToWishlist(currentPreviewBook.id);
+                bootstrap.Modal.getInstance(document.getElementById('bookPreviewModal')).hide();
+            }
+        }
+
+
+        function showNotification(message, type = 'info') {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+            notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            notification.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Auto remove after 3 seconds
+            setTimeout(() => {
+                if (notification.parentNode) {
+                    notification.parentNode.removeChild(notification);
+                }
+            }, 3000);
+        }
+        
+        function addToWishlist(bookId) {
+            // Placeholder for wishlist functionality
+            alert('Added to wishlist!');
+        }
+        
+        function shareBook(bookId) {
+            // Placeholder for share functionality
+            if (navigator.share) {
+                navigator.share({
+                    title: 'Check out this course book',
+                    text: 'I found this interesting course book on Kambel Consult',
+                    url: window.location.href
+                });
+            } else {
+                // Fallback for browsers that don't support Web Share API
+                const url = window.location.href;
+                navigator.clipboard.writeText(url).then(() => {
+                    alert('Link copied to clipboard!');
+                });
+            }
+        }
+        
+        // Add event listeners for search and filter
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCourseBooks();
+            updateCurrentYear();
+            
+            // Search functionality
+            const searchInput = document.getElementById('search-books');
+            const categoryFilter = document.getElementById('category-filter');
+            const sortFilter = document.getElementById('sort-filter');
+            const clearFiltersBtn = document.getElementById('clear-filters');
+            const gridViewBtn = document.getElementById('grid-view');
+            const listViewBtn = document.getElementById('list-view');
+            
+            if (searchInput) {
+                searchInput.addEventListener('input', filterBooks);
+            }
+            if (categoryFilter) {
+                categoryFilter.addEventListener('change', filterBooks);
+            }
+            if (sortFilter) {
+                sortFilter.addEventListener('change', filterBooks);
+            }
+            if (clearFiltersBtn) {
+                clearFiltersBtn.addEventListener('click', clearAllFilters);
+            }
+            if (gridViewBtn) {
+                gridViewBtn.addEventListener('click', () => toggleView('grid'));
+            }
+            if (listViewBtn) {
+                listViewBtn.addEventListener('click', () => toggleView('list'));
+            }
+        });
+    </script>
+</body>
+</html>

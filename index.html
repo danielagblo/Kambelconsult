@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kambel Consult - Professional Development & Consultancy</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="static/favicon.png">
+    <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+            <div class="loading-content">
+                <div class="loading-logo">
+                    <img src="static/css/klogo.jpeg" alt="Kambel Consult" class="loading-logo-img">
+                </div>
+                <div class="loading-text">Kambel Consult</div>
+                <div class="loading-spinner"></div>
+            </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <img src="static/css/klogo.jpeg" alt="Kambel Consult" class="site-logo me-2">Kambel Consult
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publications.html">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consultancy-unified.html">Consultancy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#masterclass">Masterclass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kict">KICT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 id="hero-title">Welcome to Kambel Consult</h1>
+                        <p class="lead" id="hero-subtitle">
+                            Your trusted partner in career development and business excellence
+                        </p>
+                        
+                        <!-- CEO Credentials -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fas fa-award text-primary fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold small text-dark">15+ Years Experience</div>
+                                        <div class="small" style="color: #4a5568;">Professional Development</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fas fa-users text-primary fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold small text-dark">5000+ Clients</div>
+                                        <div class="small" style="color: #4a5568;">Successfully Helped</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3">
+                                        <i class="fas fa-book text-primary fa-lg"></i>
+                                    </div>
+                                    <div>
+                                        <div class="fw-bold small text-dark">50+ Publications</div>
+                                        <div class="small" style="color: #4a5568;">Authored Works</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="profile-photo-container">
+                            <img src="static/css/profilepicture.jpeg" alt="Moses Agbesi Katamani - CEO of Kambel Consult" class="profile-photo">
+                            
+                        </div>
+                        <div class="mt-3">
+                            <h5 class="mb-1" id="profile-name" style="color: #2d2d2d;">Moses Agbesi Katamani</h5>
+                            <p class="small mb-0" id="profile-title" style="color: #4a5568;">Chief Executive Officer</p>
+                            <div class="mt-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Publications</h2>
+                <p class="lead">A curated selection of works by Moses Agbesi Katamani. Placeholder copy.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 hover-lift fade-in">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h5 class="card-title">Course Books</h5>
+                            <p class="card-text">Structured learning materials designed for academic and professional courses.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 hover-lift fade-in" style="animation-delay: 0.1s;">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-compass"></i>
+                            </div>
+                            <h5 class="card-title">Guidance Books</h5>
+                            <p class="card-text">Expert guidance and mentorship through comprehensive guidebooks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 hover-lift fade-in" style="animation-delay: 0.2s;">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h5 class="card-title">Inspirational Books</h5>
+                            <p class="card-text">Motivational and inspirational content to fuel your personal growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 hover-lift fade-in" style="animation-delay: 0.3s;">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-feather-alt"></i>
+                            </div>
+                            <h5 class="card-title">Literature</h5>
+                            <p class="card-text">Rich literary works and thought-provoking content for intellectual growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Moses Agbesi Katamani</h2>
+            </div>
+            <div class="row g-4 align-items-stretch">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h5 class="card-title">Achievement One</h5>
+                            <p class="card-text">Placeholder highlight describing a key milestone or recognition.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h5 class="card-title">Achievement Two</h5>
+                            <p class="card-text">Placeholder highlight showcasing impact with people/organizations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-microphone"></i>
+                            </div>
+                            <h5 class="card-title">Keynote Speaker</h5>
+                            <p class="card-text">Placeholder highlight for speaking engagements and conferences.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="icon-wrapper">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h5 class="card-title">Consultancy</h5>
+                            <p class="card-text">Placeholder consulting description. Replace with positioning copy.</p>
+                            <a href="#contact" class="btn btn-primary">Book a Consultation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-5">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Blog Posts</h2>
+                <p class="lead">Insights, tips, and updates from our experts</p>
+            </div>
+            <div class="row g-4" id="blog-posts">
+                <!-- Blog posts will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Masterclass Section -->
+    <section id="masterclass" class="py-5 bg-light">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="h3 text-muted mb-3">Upcoming Masterclasses</h2>
+                    <p class="text-muted">Discover our upcoming masterclass sessions designed to enhance your professional skills and knowledge</p>
+                </div>
+            </div>
+            
+            <!-- Masterclass Cards -->
+            <div class="row g-4">
+                <!-- Masterclasses will be loaded dynamically here -->
+            </div>
+            
+            <!-- View All Button -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <a href="masterclass.html" class="btn btn-primary btn-lg">View All Masterclasses</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KICT Section -->
+    <section id="kict" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <i class="fas fa-university" style="font-size: 4rem; color: var(--primary-color); opacity: 0.8;"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h2>KICT</h2>
+                    <h3 class="h4 text-muted mb-3">Kampbell Institute of Career Institute</h3>
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-tools me-2"></i>
+                        <strong>Under Development</strong> - We're building a premier institute dedicated to career development and professional excellence.
+                    </div>
+                    <p class="lead mb-4">
+                        Soon you'll have access to comprehensive training programs, resources, and educational opportunities 
+                        designed to help individuals achieve their career aspirations and professional goals.
+                    </p>
+                    <div class="row" id="kict-courses">
+                        <!-- KICT courses will be loaded dynamically here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Training Section -->
+    <section id="online-training" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Online Training</h2>
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-tools me-2"></i>
+                        <strong>Under Development</strong> - We're working on bringing you comprehensive online training programs. Stay tuned!
+                    </div>
+                    <p class="lead mb-4">
+                        Soon you'll have access to our extensive library of online courses, 
+                        interactive modules, and virtual training sessions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Safe Purchase Section -->
+    <section id="safe-purchase" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Safe Purchase</h2>
+                    <div class="alert alert-info" role="alert">
+                        <i class="fas fa-tools me-2"></i>
+                        <strong>Under Development</strong> - We're working on implementing secure payment processing and purchase protection features. Stay tuned!
+                    </div>
+                    <p class="lead mb-4">
+                        Soon you'll have access to secure payment processing, SSL encryption, 
+                        easy returns, and 24/7 customer support for all your purchases.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2>Get In Touch</h2>
+                    <p class="lead">Ready to start your journey? Contact us today!</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-4">Contact Information</h5>
+                            <div id="contact-info-display">
+                                <div class="mb-3">
+                                    <i class="fas fa-envelope text-primary me-2"></i>
+                                    <span id="contact-email" data-contact="email">Loading...</span>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-phone text-primary me-2"></i>
+                                    <span id="contact-phone" data-contact="phone">Loading...</span>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                    <span id="contact-address" data-contact="address">Loading...</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-map-pin text-primary me-2"></i>
+                                    <span id="contact-location" data-contact="location">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="col-lg-8">
+                    <form id="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <img src="static/css/klogo.jpeg" alt="Kambel Consult" class="footer-logo me-2">Kambel Consult
+                    </h5>
+                    <p class="text-muted mb-3">
+                        Empowering professionals through comprehensive publications, consultancy services, and training programs designed to accelerate career and personal development.
+                    </p>
+                    <div class="mb-3">
+                        <p class="text-muted mb-1 small">
+                            <i class="fas fa-envelope me-2"></i><span data-contact="email">Loading...</span>
+                        </p>
+                        <p class="text-muted mb-1 small">
+                            <i class="fas fa-phone me-2"></i><span data-contact="phone">Loading...</span>
+                        </p>
+                        <p class="text-muted mb-1 small">
+                            <i class="fas fa-map-marker-alt me-2"></i><span data-contact="address">Loading...</span>
+                        </p>
+                        <p class="text-muted mb-1 small">
+                            <i class="fas fa-map-pin me-2"></i><span data-contact="location">Loading...</span>
+                        </p>
+                    </div>
+                    <div class="social-links" id="social-links">
+                        <a href="#" class="text-white me-3" title="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" title="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white me-3" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="#" class="text-white" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Publications</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="publications.html" class="text-muted text-decoration-none">All Publications</a></li>
+                        <li><a href="publications.html#course-books" class="text-muted text-decoration-none">Course Books</a></li>
+                        <li><a href="publications.html#guidance-books" class="text-muted text-decoration-none">Guidance Books</a></li>
+                        <li><a href="publications.html#inspirational-books" class="text-muted text-decoration-none">Inspirational Books</a></li>
+                        <li><a href="publications.html#literature" class="text-muted text-decoration-none">Literature</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Services</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="consultancy-unified.html" class="text-muted text-decoration-none">All Consultancy</a></li>
+                        <li><a href="consultancy-unified.html#education" class="text-muted text-decoration-none">Education</a></li>
+                        <li><a href="consultancy-unified.html#career" class="text-muted text-decoration-none">Career</a></li>
+                        <li><a href="consultancy-unified.html#personal-development" class="text-muted text-decoration-none">Personal Development</a></li>
+                        <li><a href="consultancy-unified.html#business" class="text-muted text-decoration-none">Business</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="privacy-policy.html" class="text-muted text-decoration-none">Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="text-muted text-decoration-none">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-muted mb-3">Stay updated with our latest publications and insights.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <div class="input-group newsletter-group">
+                            <input type="email" class="form-control" id="newsletter-email" placeholder="Your email address" aria-label="Email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                        <small class="text-muted d-block mt-2">We respect your privacy. Unsubscribe anytime.</small>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="mb-0 text-muted">&copy; <span id="current-year">2024</span> Kambel Consult. All rights reserved.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0 text-muted">Designed with <i class="fas fa-heart text-danger"></i> for professionals</p>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0 text-muted">
+                        <small>Designed by <a href="https://bricsky.com" target="_blank" class="fw-bold text-primary text-decoration-none">Bricsky Softwares</a></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>
