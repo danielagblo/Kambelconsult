@@ -5,7 +5,27 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
+from django.http import HttpResponse
+from django.template import loader
+from django.shortcuts import render
+from django.conf import settings
+import os
 from . import views
+
+def serve_html(request, page_name):
+    """Serve HTML pages"""
+    template_path = os.path.join(settings.BASE_DIR.parent.parent, f'{page_name}.html')
+    
+    if os.path.exists(template_path):
+        try:
+            with open(template_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            return HttpResponse(content, content_type='text/html')
+        except Exception as e:
+            return HttpResponse(f"Error loading page: {str(e)}", status=500)
+    else:
+        return HttpResponse(f"Page '{page_name}' not found", status=404)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -29,6 +49,23 @@ urlpatterns = [
     path('api/site/terms-conditions/', views.TermsConditionsAPIView.as_view(), name='terms_conditions_api'),
     path('api/gallery/', views.GalleryAPIView.as_view(), name='gallery_api'),
     path('api/masterclass/register/', views.MasterclassRegistrationAPIView.as_view(), name='masterclass_register_api'),
+    
+    # Frontend pages
+    path('', lambda request: serve_html(request, 'index'), name='home'),
+    path('masterclass.html', lambda request: serve_html(request, 'masterclass')),
+    path('masterclass', lambda request: serve_html(request, 'masterclass')),
+    path('publications.html', lambda request: serve_html(request, 'publications')),
+    path('publications', lambda request: serve_html(request, 'publications')),
+    path('consultancy.html', lambda request: serve_html(request, 'consultancy-unified')),
+    path('consultancy', lambda request: serve_html(request, 'consultancy-unified')),
+    path('gallery.html', lambda request: serve_html(request, 'gallery')),
+    path('gallery', lambda request: serve_html(request, 'gallery')),
+    path('about.html', lambda request: serve_html(request, 'about')),
+    path('about', lambda request: serve_html(request, 'about')),
+    path('privacy-policy.html', lambda request: serve_html(request, 'privacy-policy')),
+    path('privacy-policy', lambda request: serve_html(request, 'privacy-policy')),
+    path('terms-conditions.html', lambda request: serve_html(request, 'terms-conditions')),
+    path('terms-conditions', lambda request: serve_html(request, 'terms-conditions')),
 ]
 
 # Serve media files in development

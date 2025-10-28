@@ -1,6 +1,6 @@
 # 🚀 Quick Start Guide - Kambel Consult
 
-Get up and running in 3 easy steps!
+Get up and running in 2 easy steps!
 
 ## Step 1: Run Setup Script
 
@@ -16,20 +16,25 @@ setup.bat
 
 This will install all dependencies and set up the database.
 
-## Step 2: Start the Servers
+## Step 2: Start the Application
 
-### Terminal 1 - Frontend (Flask)
+### Simple Method (Recommended)
 ```bash
-python3 app.py
+python3 start.py
 ```
-Website will be at: http://localhost:5001
 
-### Terminal 2 - Backend (Django Admin)
+### Manual Method
 ```bash
 cd django_admin
 python3 manage.py runserver 8000
 ```
-Admin panel will be at: http://localhost:8000/admin
+
+**Everything runs on ONE port now!**
+
+## ✅ You're Ready!
+
+- **Website**: http://localhost:8000
+- **Admin Panel**: http://localhost:8000/admin
 
 ## Step 3: Create Admin Account
 
@@ -40,41 +45,39 @@ python3 manage.py createsuperuser
 
 Follow the prompts to create your admin username and password.
 
-## ✅ You're Ready!
+## 📚 What's Available
 
-- **Website**: http://localhost:5001
-- **Admin Panel**: http://localhost:8000/admin
-- **Username**: (the one you just created)
-- **Password**: (the one you just set)
-
-## 📚 Next Steps
-
-1. Log into the admin panel
-2. Add your content (publications, blog posts, masterclasses, etc.)
-3. Customize the site configuration
-4. Upload cover images and media
+| Page | URL |
+|------|-----|
+| Homepage | http://localhost:8000 |
+| Publications | http://localhost:8000/publications |
+| Consultancy | http://localhost:8000/consultancy |
+| Masterclass | http://localhost:8000/masterclass |
+| Gallery | http://localhost:8000/gallery |
+| About | http://localhost:8000/about |
+| Privacy Policy | http://localhost:8000/privacy-policy |
+| Terms & Conditions | http://localhost:8000/terms-conditions |
+| Admin Panel | http://localhost:8000/admin |
 
 ## 🆘 Troubleshooting
 
 **Port already in use?**
-- Change ports in `app.py` (FLASK_PORT) and Django settings (PORT)
-
-**Dependencies not installing?**
-- Make sure you have Python 3.8+ installed
-- Try: `pip install --upgrade pip` first
+- Kill the process using port 8000: `lsof -ti:8000 | xargs kill`
 
 **Database errors?**
 - Run: `cd django_admin && python3 manage.py migrate`
 
+**Static files not loading?**
+- Run: `cd django_admin && python3 manage.py collectstatic`
+
 **Forgot admin password?**
-- Create a new superuser or use Django shell to reset
+- Create a new superuser or reset in Django shell
 
 ## 💡 Tips
 
-- Keep both servers running while developing
+- Everything runs on port 8000 now (single unified server)
 - Use Django admin for all content management
-- Check browser console for API errors
-- Media files are stored in `django_admin/media/`
+- Check browser console for any errors
+- Media files are in `django_admin/media/`
 
 Happy coding! 🎉
-

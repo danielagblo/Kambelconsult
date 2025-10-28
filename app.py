@@ -714,5 +714,15 @@ if __name__ == '__main__':
     # Create data directory
     os.makedirs('data', exist_ok=True)
     
-    # Run the app
-    app.run(debug=True, host='0.0.0.0', port=5001)
+    print("=" * 60)
+    print("🚀 Kambel Consult - Django Integration")
+    print("=" * 60)
+    print("⚠️  This app now runs WITH Django on port 8000")
+    print("📍 Start Django: cd django_admin && python3 manage.py runserver 8000")
+    print("📍 Website: http://localhost:8000")
+    print("📍 Admin: http://localhost:8000/admin")
+    print("=" * 60)
+    # Don't run Flask separately - it should be integrated with Django
+    print("Note: Use Django's development server instead")
+    import sys
+    sys.exit(0)

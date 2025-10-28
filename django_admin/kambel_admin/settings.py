@@ -91,6 +91,11 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+# Static files from root directory (for frontend assets)
+STATICFILES_DIRS = [
+    BASE_DIR.parent.parent / 'static',  # Root static directory
+]
+
 # Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
