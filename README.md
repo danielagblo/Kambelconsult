@@ -1,235 +1,272 @@
-# Kambel Consult Website
+# Kambel Consult - Professional Development & Consultancy Platform
 
-A fully functional website for Kambel Consult featuring publications, consultancy services, blog, masterclasses, and KICT (Kampbell Institute of Career Institute).
+A comprehensive website and content management system for Kambel Consult featuring publications, consultancy services, blog, masterclasses, and KICT programs.
 
-## Features
+## 🚀 Quick Start
 
-### Frontend
-- **Responsive Design**: Built with Bootstrap 5 for mobile-first responsive design
-- **Modern UI**: Clean, professional interface with smooth animations
-- **Interactive Elements**: Dynamic content loading, form validation, and user interactions
-- **Sections**:
-  - Publications (Course Books, Guidance Books, Inspirational Books, Literature)
-  - Consultancy Services (Education, Career, Personal Development, Business)
-  - Blog with dynamic content
-  - Masterclass series
-  - KICT (Kampbell Institute of Career Institute)
-  - Online Training (Under Development)
-  - Safe Purchase functionality
-  - Contact forms
+### Automated Setup (Recommended)
 
-### Backend
-- **Flask API**: RESTful API endpoints for all functionality
-- **Data Management**: JSON-based data storage with file persistence
-- **Contact System**: Contact form handling with email notifications
-- **Newsletter**: Subscription management
-- **Purchase System**: E-commerce functionality for books and courses
-- **Enrollment**: Course enrollment system
+**For macOS/Linux:**
+```bash
+bash setup.sh
+```
 
-## Technology Stack
+**For Windows:**
+```bash
+setup.bat
+```
 
-### Frontend
-- HTML5
-- CSS3 (Custom styles with Bootstrap 5)
-- JavaScript (ES6+)
-- Bootstrap 5.3.0
-- Font Awesome 6.4.0
+The setup script will:
+- Create a virtual environment
+- Install all Python dependencies
+- Set up Django database and migrations
+- Create necessary directories
 
-### Backend
-- Python 3.8+
-- Flask 2.3.3
-- Flask-CORS 4.0.0
+### Manual Setup
 
-## Installation & Setup
+If you prefer to set up manually:
 
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package installer)
-
-### Installation Steps
-
-1. **Clone or download the project**
+1. **Create virtual environment**
    ```bash
-   cd kambelconsult
+   python3 -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
    ```
 
-2. **Create a virtual environment (recommended)**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies**
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
+   cd django_admin && pip install -r requirements.txt && cd ..
    ```
 
-4. **Run the application**
+3. **Set up Django database**
    ```bash
-   python app.py
+   cd django_admin
+   python3 manage.py migrate
+   python3 manage.py createsuperuser  # Optional: Create admin user
+   cd ..
    ```
 
-5. **Access the website**
-   Open your browser and navigate to `http://localhost:5000`
+4. **Configure environment (optional)**
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 kambelconsult/
-├── app.py                 # Flask backend application
-├── index.html            # Main HTML file
-├── requirements.txt      # Python dependencies
-├── README.md            # Project documentation
-├── static/
-│   ├── css/
-│   │   └── style.css    # Custom CSS styles
-│   └── js/
-│       └── script.js    # JavaScript functionality
-└── data/                # Data storage directory (created automatically)
-    ├── contact_messages.json
-    └── newsletter_subscriptions.json
+├── app.py                      # Flask frontend application (Port 5001)
+├── django_admin/              # Django admin backend (Port 8000)
+│   ├── kambel_admin/          # Django app
+│   │   ├── models.py           # Database models
+│   │   ├── admin.py           # Admin panel configuration
+│   │   ├── views.py           # API views
+│   │   ├── urls.py            # URL routing
+│   │   └── settings.py        # Django settings
+│   ├── manage.py              # Django management script
+│   ├── media/                 # Media files (uploads)
+│   └── db.sqlite3             # SQLite database
+├── static/                    # Static files (CSS, JS, images)
+├── index.html                 # Homepage
+├── masterclass.html           # Masterclass page
+├── publications.html          # Publications page
+├── consultancy-unified.html   # Consultancy page
+├── gallery.html               # Gallery page
+├── about.html                 # About page
+├── requirements.txt           # Python dependencies
+├── setup.sh                   # Setup script (macOS/Linux)
+└── setup.bat                  # Setup script (Windows)
 ```
 
-## API Endpoints
+## 🔧 Running the Application
 
-### Blog
-- `GET /api/blog` - Get all blog posts
-- `GET /api/blog/<id>` - Get specific blog post
+### Start the Flask Frontend
 
-### Publications
-- `GET /api/publications` - Get all publications
-- `GET /api/publications/<category>` - Get publications by category
+```bash
+# Activate virtual environment
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
-### Masterclasses
-- `GET /api/masterclasses` - Get all masterclasses
-- `GET /api/masterclasses/<id>` - Get specific masterclass
+# Start Flask server
+python3 app.py
+```
 
-### KICT
-- `GET /api/kict/courses` - Get KICT courses
+The website will be available at: **http://localhost:5001**
 
-### Contact & Forms
-- `POST /api/contact` - Submit contact form
-- `POST /api/newsletter` - Subscribe to newsletter
-- `POST /api/purchase` - Process purchase
-- `POST /api/enroll` - Enroll in course
+### Start the Django Admin Backend
 
-## Features in Detail
+```bash
+# In a new terminal
+cd django_admin
+python3 manage.py runserver 8000
+```
 
-### Publications Section
-- **Course Books**: Academic and professional course materials
-- **Guidance Books**: Expert guidance and mentorship resources
-- **Inspirational Books**: Motivational and personal growth content
-- **Literature**: Literary works and thought-provoking content
+The admin panel will be available at: **http://localhost:8000/admin**
 
-### Consultancy Services
-- **Education**: Educational consulting and learning enhancement
-- **Career**: Career guidance and professional development
-- **Personal Development**: Personal growth and self-improvement
-- **Business**: Business consulting and growth strategies
+## 📖 Features
 
-### Blog System
-- Dynamic blog post loading
-- Category-based filtering
-- Author information and publication dates
-- Responsive card-based layout
+### Frontend (Flask)
+- ✅ Responsive Bootstrap 5 design
+- ✅ Dynamic content loading from Django API
+- ✅ Publications management
+- ✅ Consultancy services
+- ✅ Blog system
+- ✅ Masterclass registration
+- ✅ Gallery with images and videos
+- ✅ Contact forms
+- ✅ Newsletter subscription
+- ✅ Social media integration
+- ✅ Custom favicon and branding
 
-### Masterclass Series
-- Expert-led training sessions
-- Interactive learning experiences
-- Certificate programs
-- Networking opportunities
+### Backend (Django Admin)
+- ✅ Complete admin panel for content management
+- ✅ Publications with categories and cover images
+- ✅ Consultancy services with cover images
+- ✅ Blog posts with cover images
+- ✅ Masterclasses with registration system
+- ✅ Gallery items with media upload
+- ✅ Newsletter subscription management
+- ✅ Contact message management
+- ✅ Site configuration (hero, about, SEO)
+- ✅ Social media links management
+- ✅ Legal pages (Privacy Policy, Terms & Conditions)
 
-### KICT (Kampbell Institute of Career Institute)
-- Professional development programs
-- Career transition workshops
-- Industry-specific training
-- Success tracking and metrics
+## 🗄️ Database Models
 
-## Customization
+All data is managed through Django admin:
 
-### Adding New Blog Posts
-Edit the `BLOG_POSTS` list in `app.py` to add new blog posts.
+- **Publications**: Books with categories and purchase links
+- **Consultancy Services**: Service offerings with cover images
+- **Blog Posts**: Blog content with cover images
+- **Masterclasses**: Training sessions with registration
+- **Gallery Items**: Images and videos with captions
+- **Newsletter Subscriptions**: Email subscriptions
+- **Contact Messages**: Contact form submissions
+- **Site Configuration**: Hero section, about page, SEO
+- **Social Media Links**: Social media platform links
 
-### Adding New Publications
-Update the `PUBLICATIONS` dictionary in `app.py` with new books and resources.
+## 🔐 Django Admin Access
 
-### Styling Changes
-Modify `static/css/style.css` to customize the appearance and layout.
+### Create Superuser
 
-### Adding New Features
-- Add new API endpoints in `app.py`
-- Update the frontend in `index.html` and `static/js/script.js`
-- Add new CSS styles as needed
+```bash
+cd django_admin
+python3 manage.py createsuperuser
+```
 
-## Production Deployment
+Follow the prompts to create your admin account.
 
-### Environment Variables
-Set up the following environment variables for production:
-- `FLASK_ENV=production`
-- `MAIL_USERNAME` - Email username for contact form
-- `MAIL_PASSWORD` - Email password for contact form
-- `SECRET_KEY` - Flask secret key
+### Default Admin Credentials
 
-### Database Integration
-For production, consider replacing JSON file storage with a proper database:
-- PostgreSQL
-- MySQL
-- SQLite
-- MongoDB
+If you've run the populate commands, the default credentials might be:
+- Username: `admin`
+- Password: `admin123` (please change this!)
 
-### Payment Integration
-Integrate with payment gateways:
-- Stripe
-- PayPal
-- Square
-- Razorpay
+**Important**: Always change the default password in production!
 
-### Email Service
-Set up proper email service:
-- SendGrid
-- Mailgun
-- AWS SES
-- SMTP with proper authentication
+## 🌐 API Endpoints
 
-## Security Considerations
+### Django Admin API (Port 8000)
 
-- Implement proper input validation
-- Add CSRF protection
-- Use HTTPS in production
-- Implement rate limiting
-- Add authentication for admin functions
-- Sanitize user inputs
+- `GET /api/blog/` - Get all blog posts
+- `GET /api/publications/` - Get all publications
+- `GET /api/consultancy/` - Get all consultancy services
+- `GET /api/masterclasses/` - Get all masterclasses
+- `GET /api/gallery/` - Get gallery items
+- `GET /api/site/config/` - Get site configuration
+- `GET /api/site/hero/` - Get hero section content
+- `GET /api/site/contact-info/` - Get contact information
+- `GET /api/site/social-media/` - Get social media links
 
-## Browser Support
+### Frontend (Port 5001)
 
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+The Flask app proxies requests to the Django API and serves the HTML pages.
 
-## Contributing
+## 🛠️ Development
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+### Making Changes
 
-## License
+1. **Content Changes**: Use Django admin panel at http://localhost:8000/admin
+2. **Frontend Changes**: Edit HTML files (index.html, masterclass.html, etc.)
+3. **Styling**: Edit `static/css/style.css`
+4. **JavaScript**: Edit `static/js/script.js`
+5. **Backend Logic**: Edit `django_admin/kambel_admin/models.py`, `views.py`, `admin.py`
 
-This project is licensed under the MIT License.
+### Database Migrations
 
-## Support
+When you change models in Django:
 
-For support and questions, please contact:
-- Email: info@kambelconsult.com
-- Phone: +1 (555) 123-4567
+```bash
+cd django_admin
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
 
-## Changelog
+## 📝 Environment Variables
 
-### Version 1.0.0
-- Initial release
-- Complete frontend and backend implementation
-- All core features implemented
-- Responsive design
-- API endpoints for all functionality
+Create a `.env` file in the root directory:
+
+```env
+# Flask Configuration
+FLASK_ENV=development
+SECRET_KEY=your-secret-key-here
+
+# Django Configuration
+DJANGO_SECRET_KEY=your-django-secret-key
+DJANGO_DEBUG=True
+
+# Email Configuration
+MAIL_SERVER=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USE_TLS=True
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+
+# Port Configuration
+FLASK_PORT=5001
+DJANGO_PORT=8000
+```
+
+## 🚀 Production Deployment
+
+### Recommended Hosting
+
+- **Frontend**: Vercel, Netlify, or any static hosting
+- **Backend**: Heroku, Railway, DigitalOcean, AWS
+- **Database**: PostgreSQL (recommended) or SQLite for small projects
+- **Media Files**: AWS S3, Cloudinary, or any CDN
+
+### Production Checklist
+
+- [ ] Set `DEBUG=False` in Django settings
+- [ ] Configure `ALLOWED_HOSTS`
+- [ ] Use PostgreSQL instead of SQLite
+- [ ] Set up proper email configuration
+- [ ] Configure static file serving
+- [ ] Set up HTTPS/SSL
+- [ ] Use environment variables for secrets
+- [ ] Set up automatic backups
+- [ ] Configure monitoring and logging
+
+## 📞 Support
+
+For issues and questions:
+- Check existing documentation files in the project
+- Review Django and Flask documentation
+- Contact: info@kambelconsult.com
+
+## 📄 License
+
+This project is proprietary and confidential.
+
+## 🎉 Acknowledgments
+
+Built with:
+- Flask - Python web framework
+- Django - High-level Python web framework
+- Bootstrap 5 - CSS framework
+- Font Awesome - Icon library
+
+---
+
+**Made with ❤️ for Kambel Consult**

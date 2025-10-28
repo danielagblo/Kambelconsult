@@ -23,10 +23,12 @@ MANIFEST
 
 # Virtual Environment
 venv/
+.venv/
 env/
 ENV/
 env.bak/
 venv.bak/
+VIRTUAL_ENV/
 
 # Flask
 instance/
@@ -37,6 +39,7 @@ data/
 *.db
 *.sqlite
 *.sqlite3
+db.sqlite3
 
 # Environment variables
 .env
@@ -51,9 +54,9 @@ data/
 *.swp
 *.swo
 *~
+.DS_Store
 
 # OS
-.DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100
@@ -116,22 +119,11 @@ dmypy.json
 *.log
 *.pot
 *.pyc
-__pycache__
-db.sqlite3
-db.sqlite3-journal
-/staticfiles/
-/media/
-
-# Virtual Environment
-.venv/
-venv/
-VIRTUAL_ENV/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
+django_admin/media/
+django_admin/staticfiles/
+django_admin/db.sqlite3
 
 # Project specific
 test_backend.py
+backend/
+instance/
